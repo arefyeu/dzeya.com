@@ -1,0 +1,36 @@
+.logo {
+    display: inline-flex;
+    align-items: baseline;
+    text-decoration: none;
+    border: none;
+    will-change: opacity;
+    transition: opacity .3s ease;
+    color: $white;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1;
+    font-family: 'Albert Sans', sans-serif;
+    text-decoration: none;
+
+    span {
+        font-size: 21px;
+        font-weight: 800;
+    }
+
+    em {
+        margin-left: -3.5px;
+    }
+
+    &__img {
+        display: block;
+        max-height: 30px;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        opacity: .8;
+        color: $white;
+        text-decoration: none;
+    }
+}

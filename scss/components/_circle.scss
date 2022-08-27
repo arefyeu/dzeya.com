@@ -1,0 +1,33 @@
+.circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background-color: #CEFF7D;
+  border-radius: 32px;
+  opacity: 0;
+  transition: transform .3s ease, opacity .3s ease;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover,
+  &:focus{
+    transform: scale(1.2)!important;
+  }
+
+  @media (max-width: 767px) {
+    & {
+      width: 40px;
+      height: 40px;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

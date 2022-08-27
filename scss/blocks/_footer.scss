@@ -1,0 +1,50 @@
+.footer {
+  margin-top: auto;
+  border-top: 1px solid #5E696E;
+
+  &__container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #8D989A;
+    letter-spacing: -0.02em;
+  }
+
+  &__link {
+    display: inline-flex;
+    text-decoration: none;
+    color: #8D989A;
+    margin-right: 40px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+
+  &__link--email {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  @media (max-width: 576px) {
+    &__container {
+      min-height: 72px;
+    }
+
+    &__link {
+      margin-right: 5px;
+    }
+
+    &__link--email {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+}
+

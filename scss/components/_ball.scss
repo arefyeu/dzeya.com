@@ -1,0 +1,66 @@
+.ball {
+  display: flex;
+  width: 110px;
+  height: 110px;
+  background-color: $white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: bounceBall 1.5s cubic-bezier(.5, 0.05, 1, .5) forwards;
+  animation: bounceBall 1.5s alternate forwards ease-in;
+
+  &__img {
+    min-width: 108px;
+    min-height: 108px;
+    max-width: 108px;
+    max-height: 108px;
+    padding: 30px;
+  }
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+@media (min-width: 577px) {
+  .ball {
+    display: none;
+  }
+}
+
+@keyframes bounceBall {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, calc(100vh - 110px - 52px), 0);
+  }
+}
+
+
+/* canvas-holder */
+
+.canvas-holder {
+	position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 9;
+
+  &--w100 {
+    width: 100%;
+  }
+
+  @media (max-width: 576px) {
+    & {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,191 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba($black, 0);
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $white;
+  text-align: left;
+  font-family: $fontDefault;
+  font-size: $fontSizeDefault;
+  font-weight: 400;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  scrollbar-color: #465155 #465155;
+  scrollbar-width: thin;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #465155;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #465155;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #171B1C;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: .5rem;
+  }
+}
+
+input,
+select,
+button,
+textarea {
+  font-family: $fontDefault;
+}
+
+a {
+  color: $blue;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: $blue;
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  color: $red;
+  text-decoration: underline;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: $darkgray;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+
+
+
+/* container */
+
+.container {
+  max-width: 1360px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+
+
+
+/* sr-only */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
+
+/* root */
+
+.root--custom {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+
+/* thanks-page */
+
+.thanks-page {
+  justify-content: center;
+  align-items: center;
+}
+
+.thanks {
+  text-align: center;
+
+  &__title {
+    margin-top: -2rem !important;
+  }
+
+  &__lead {
+    line-height: 1.6;
+  }
+}
+
+
+
+
+
+
+
+/*
+#main-scrollbar {
+  width: auto;
+  height: 100vh;
+  overflow: auto;
+}*/
