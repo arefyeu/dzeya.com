@@ -249,15 +249,19 @@
     }
 
     &__img {
-      position: absolute; top: 78%; right: 25%;
+      position: absolute; top: 52%; right: 25%;
       pointer-events: none;
-      transform: translateY(-45%) scale(1) rotate(5deg);
+      transform: translateY(-50%) scale(1) rotate(5deg);
       max-width: 202px;
       transition: opacity .3s ease;
       margin-left: auto;
       margin-right: auto;
       z-index: 1;
       opacity: 1;
+    }
+
+    &__get-touch-container {
+      position: relative;
     }
 
     &__get-touch {
