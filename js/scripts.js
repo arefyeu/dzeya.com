@@ -135,7 +135,7 @@
 	initCursor();
 
 
-	if (window.matchMedia("(max-width: 576px)").matches) {
+	/*if (window.matchMedia("(max-width: 576px)").matches) {
 		const ball = document.querySelector('.ball__img');
 		if (!ball) return
 		let index = 0;
@@ -151,7 +151,7 @@
 			ball.src = sources[index];
 			index = (index === sources.length - 1) ? 0 : index + 1;
 		});
-	}
+	}*/
 
 	function initMarquee() {
 		const digitalBlock = document.querySelector('.digital__block');

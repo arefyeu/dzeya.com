@@ -1,5 +1,6 @@
 .ball {
   display: flex;
+  display: none;
   width: 110px;
   height: 110px;
   background-color: $white;
@@ -58,9 +59,9 @@
     width: 100%;
   }
 
-  @media (max-width: 576px) {
+  /*@media (max-width: 576px) {
     & {
       display: none;
     }
-  }
+  }*/
 }

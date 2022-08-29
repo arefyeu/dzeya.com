@@ -432,11 +432,11 @@ window.addEventListener('load', () => {
 		}
 	}
 
-	if (window.matchMedia("(min-width: 577px)").matches) {
+	//if (window.matchMedia("(min-width: 577px)").matches) {
 		doBalls();
 		canvas.onmousemove = mouseMove;
 		canvas.onmousedown = mouseDown;
 		canvas.onmouseup = mouseUp;
-	}
+	//}
 
 });
