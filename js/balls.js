@@ -36,12 +36,30 @@ window.addEventListener('load', () => {
 	let xOffset = 0; // left offset
 	let yOffset = 0; // bottom offset
 	let ballDensity = 30; // How dense are the balls
-	let ballSize1 = 200; // Ball 1 size
-	let ballSize2 = 180; // Ball 2 size
-	let ballSize3 = 140; // Ball 3 size
-	let ballSize4 = 120; // Ball 4 size
-	let ballSize5 = 80; // Ball 5 size
-	let ballSize6 = 62; // Ball 6 size
+	let ballSize1
+	let ballSize2
+	let ballSize3
+	let ballSize4
+	let ballSize5
+	let ballSize6
+
+	if (window.matchMedia("(min-width: 577px)").matches) {
+		ballSize1 = 200; // Ball 1 size
+		ballSize2 = 180; // Ball 2 size
+		ballSize3 = 140; // Ball 3 size
+		ballSize4 = 120; // Ball 4 size
+		ballSize5 = 80; // Ball 5 size
+		ballSize6 = 62; // Ball 6 size
+	}
+	else {
+		ballSize1 = 120; // Ball 1 size
+		ballSize2 = 110; // Ball 2 size
+		ballSize3 = 90; // Ball 3 size
+		ballSize4 = 80; // Ball 4 size
+		ballSize5 = 60; // Ball 5 size
+		ballSize6 = 42; // Ball 6 size
+	}
+
 	let canvasWidth = 1500; // Canvas width
 	let canvasHeight = 1000; // Canvas height
 	let stackBall = true; // Stack the balls (or false is overlap)

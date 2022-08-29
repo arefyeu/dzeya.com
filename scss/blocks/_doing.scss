@@ -244,6 +244,10 @@
       padding-top: 25px;
     }
 
+    &__accordion &__text {
+      width: 100%;
+    }
+
     &__img {
       position: absolute; top: 78%; right: 25%;
       pointer-events: none;
